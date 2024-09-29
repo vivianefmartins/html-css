@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+
+                size - no manual da W3C diz que podemos colocar a size na shorthand, porém quando aplicamos a imagem some no navegador.
+                O manual diz que pode ser feito desta forma, mas o navegador não aceita.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,7 +38,15 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora eveniet nulla officia veritatis qui quas, tenetur quae numquam id vero, nesciunt consequatur. Saepe sequi, accusantium tempora nostrum commodi ratione?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi praesentium, doloribus minima corporis obcaecati harum mollitia illo aut optio ea necessitatibus placeat sed facere aliquam minus totam quisquam repudiandae deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quibusdam quam voluptas quis atque, quo delectus omnis dolorem cum id nisi est impedit facilis nemo. Tempore, obcaecati. Magnam, deserunt est?</p>
     </main>
 </body>
 </html>
