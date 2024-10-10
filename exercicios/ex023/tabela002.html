@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -29,6 +30,20 @@
         thead, tfoot {
             background-color: rgb(94, 92, 92);
             color: white;
+        }
+
+        thead > tr > th { /* configuração para deixar fixo o cabeçalho da tabela. Tem que colocar posicionamento relativo em table*/
+            position: sticky;
+            top: 0;
+            background-color: rgb(94, 92, 92);
+        }
+
+        tbody > tr:nth-child(odd) { /*pode-se usar 2n-1 no lugar de odd*/
+            background-color: lightyellow;
+        }
+
+        tbody > tr:nth-child(even) { /*pode-se usar 2n no lugar de even*/
+            background-color: rgb(255, 190, 164);
         }
 
         td.num {
@@ -55,7 +70,7 @@
             <tr>
                 <!-- o scope não gera nenhum resultado visual, mas é importante para que os navegadores(mecanismos de busca) possam analisar os dados da tabela de forma coerente -->
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
