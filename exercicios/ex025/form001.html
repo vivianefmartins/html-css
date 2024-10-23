@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <p><label for="inome">Nome: </label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
@@ -27,4 +27,8 @@
 * name -> mais útil para html e php.
 * id -> mais útil para JavaScript.
 * <label> -> etiqueta. É usado para fazer relação o objeto do formulário e a etiqueta dele através do atributo for.
+* method get ou post -> get: os dados da busca aparece na url.
+                        post: os dados não aparecem na url.
+    Get -> só permite enviar dados com até 3000 B(é aproximadamente 3000 letras).
+    Post -> é usado para enviar dados sensíveis, dados com mais de 3000 B e para fazer envio de arquivos.
 -->
