@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmax" value="M"><label for="isexmax">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isexfem" checked value="F"><label for="isexfem">Feminino</label>
+            <!-- cheked -> para o radio já ficar previamente marcado para o usuário 
+            No radio, o cheked só pode ser colocado em uma opção. Já no checkbox pode colocar em vários.
+            No radio, o name tem que ser o mesmo para todas as opções, já no checkbox não precisa. -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="espfut" id="iespfut"><label for="iespfut">Futebol</label> <br>
+            <input type="checkbox" name="espbas" id="iespbas"><label for="iespbas">Basquete</label> <br>
+            <input type="checkbox" name="espnat" id="iespnat"><label for="iespnat">Natação</label> <br>
+            <input type="checkbox" name="espteni" id="iespten"><label for="iespten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
